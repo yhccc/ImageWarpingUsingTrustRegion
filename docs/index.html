@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>A coarse-to-fine image warping approach using trust region optimization for orthoimage mosaicking</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/image-compare-viewer.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script> -->
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <!-- <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script> -->
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">A coarse-to-fine image warping approach using trust region
+              optimization for orthoimage mosaicking</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="mailto:yinhc0129@whu.edu.cn">Hongche Yin</a>,
+              </span>
+              <span class="author-block">
+                <a href="mailto:yinxuanli2022@163.com">Yinxuan Li</a>,
+              </span>
+              <span class="author-block">
+                <a href="mailto:pengwei.zhou@whu.edu.cn">Pengwei Zhou</a>,
+              </span>
+              <span class="author-block">
+                <a href="mailto:xugzh96_0508@whu.edu.cn">Guozheng Xu</a>,
+              </span>
+              <span class="author-block">
+                <a href="mailto:jian.yao@whu.edu.cn">Jian Yao</a>,
+              </span>
+              <span class="author-block">
+                <a href="mailto:li.li@whu.edu.cn">Li Li</a><sup>*</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">School of Remote Sensing and Information Engineering, Wuhan
+                University<br></span>
+              <!-- Conferance name and year</span> -->
+              <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span> -->
+
+                <!-- Supplementary PDF link -->
+                <!-- <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span> -->
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Coming Soon)</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser image-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/overview.jpg" />
+        <h2 class="subtitle has-text-justified">
+          The workflow of our local alignment optimization approach. 1) Formulated geometric misalignment correction as
+          a nonlinear optimization problem, integrating photometric consistency, gradient variation, and visual
+          perception. 2) Developed a fast trust-region-based solver that leverages image pyramids for adaptive and
+          efficient deformation vector estimation. 3) Extended the method from two-image alignment to multi-image
+          mosaicking with high precision. 4) Effectively eliminates geometric misalignments around seamline, while
+          preserving the geometric properties of orthoimages as much as possible.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser image -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Orthoimage mosaicking usually tries to make the seamline bypass the obvious objects as much as possible to
+              produce a seamless digital orthophoto map (DOM). Nevertheless, stitching artifacts may still occur when
+              obvious objects are inevitably crossed by the seamline or when the orthoimages are not accurately aligned
+              in geometry. Thus, image warping is necessary to correct the geometric misalignments in the stitching
+              result. Existing image warping approaches primarily focus on natural images, with relatively few studies
+              targeting orthoimages. Unlike natural images, orthoimages have significant geometric attributes and no
+              longer satisfy the epipolar constraint. Therefore, most existing image warping methods are ineffective in
+              dealing with geometric misalignment in orthoimage mosaicking. To solve the above problems, we propose a
+              coarse-to-fine image warping approach using trust region optimization for orthoimage mosaicking, which is
+              based on photometric and gradient consistency. This approach removes apparent geometric misalignments
+              while preserving most geometric information in orthoimages. Firstly, we obtain an optimal seamline and
+              search for geometrically misaligned regions along the seamline using structural similarity (SSIM).
+              Secondly, we extend a buffer zone centered on the seamline for each region. The geometric alignment
+              problem is modeled as an optimization problem of the deformation vectors for all pixels within the buffer.
+              Next, the trust region method is employed to solve this nonlinear optimization problem from coarse to fine
+              iteratively. By introducing an image pyramid, the optimization from coarse to fine improves efficiency and
+              avoids getting trapped in local optima. Finally, the input orthoimages are warped based on the optimized
+              pixel deformation vectors. However, when dealing with misaligned regions covered by multiple images, the
+              frame-to-frame warping cannot achieve the optimal result. Therefore, we propose a multi-image joint
+              optimization strategy, which introduces auxiliary variables that fuse information from multiple
+              orthoimages to generate seamless multi-image mosaicking results. The experimental results demonstrate that
+              whether in two orthoimage mosaicking or multiple orthoimage mosaicking, our solution has better results in
+              visual quality and quantitative evaluation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <!-- Experiments -->
+  <section class="section" id="Experiments">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Experiments</h2>
+      <div class="compare-container">
+        <div class="image-compare">
+          <img src="static/images/compare/04_left.png" />
+          <img src="static/images/compare/04_right.png" />
+        </div>
+
+        <div class="image-compare">
+          <img src="static/images/compare/03_left.png" />
+          <img src="static/images/compare/03_right.png" />
+        </div>
+
+        <div class="image-compare">
+          <img src="static/images/compare/02_left.png" />
+          <img src="static/images/compare/02_right.png" />
+        </div>
+
+        <div class="image-compare">
+          <img src="static/images/compare/01_left.png" />
+          <img src="static/images/compare/01_right.png" />
+        </div>
+
+        <div class="image-compare">
+          <img src="static/images/compare/05_left.png" />
+          <img src="static/images/compare/05_right.png" />
+        </div>
+
+        <div class="image-compare">
+          <img src="static/images/compare/06_left.png" />
+          <img src="static/images/compare/06_right.png" />
+        </div>
+
+        <div class="image-compare">
+          <img src="static/images/compare/07_left.png" />
+          <img src="static/images/compare/07_right.png" />
+        </div>
+
+        <div class="image-compare">
+          <img src="static/images/compare/08_left.png" />
+          <img src="static/images/compare/08_right.png" />
+        </div>
+
+        <div class="image-compare">
+          <img src="static/images/compare/09_left.png" />
+          <img src="static/images/compare/09_right.png" />
+        </div>
+
+        <div class="image-compare">
+          <img src="static/images/compare/multi_01_left.jpg" />
+          <img src="static/images/compare/multi_01_right.jpg" />
+        </div>
+
+        <div class="image-compare">
+          <img src="static/images/compare/multi_02_left.jpg" />
+          <img src="static/images/compare/multi_02_right.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End experiments -->
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Coming Soon</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+  <script src="static/js/image-compare-viewer.min.js"></script>
+  <script>
+    const imageCompare = document.querySelectorAll('.image-compare');
+    imageCompare.forEach((image) => {
+      new ImageCompare(image,).mount();
+    });
+  </script>
+</body>
+
+
+</html>
